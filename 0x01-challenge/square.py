@@ -47,7 +47,7 @@ class Square():
         """ Area of the square """
         return (self.__width * self.__height)
 
-    def perimeterOfMySquare(self):
+    def perimeter_of_my_square(self):
         """ Perimeter of the square"""
         return ((self.__width * 2) + (self.__height * 2))
 
@@ -58,7 +58,7 @@ class Square():
 
 if __name__ == "__main__":
 
-    s = Square(width=12, height=9)
+    s = Square(width=12, height=12)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeterOfMySquare())
+    print(s.perimeter_of_my_square())
