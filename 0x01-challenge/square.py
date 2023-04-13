@@ -3,20 +3,23 @@
 
 
 class Square():
-    """`Square` class showing the `area` and `perimeter` functions"""
+    """Defining the class Square
+    Returns:
+        Nothing.
+    """
 
     __width = 0
     __height = 0
 
     def __init__(self, width=0, height=0):
-        """Initialize the variables"""
+        """Constructor for the class Square"""
         self.__width = width
         self.__height = height
 
     @property
     def width(self):
         """getter for the private instance attribute width"""
-        return (self.__width)
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -31,7 +34,7 @@ class Square():
     @property
     def height(self):
         """getter for the private instance attribute height"""
-        return (self.__height)
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -44,20 +47,20 @@ class Square():
             self.__height = value
 
     def area_of_my_square(self):
-        """ Area of the square """
-        return (self.__width * self.__height)
+        """Area of the square"""
+        return self.__width * self.__height
 
-    def perimeter_of_my_square(self):
-        """ Perimeter of the square"""
-        return ((self.__width * 2) + (self.__height * 2))
+    def permiter_of_my_square(self):
+        """Perimeter of the square"""
+        return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """String representation of the Square"""
+        """String representation of the class square"""
         return "{}/{}".format(self.__width, self.__height)
 
 
 if __name__ == "__main__":
-    s = Square(width=12, height=12)
+    s = Square(width=9, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeter_of_my_square())
+    print(s.permiter_of_my_square())
