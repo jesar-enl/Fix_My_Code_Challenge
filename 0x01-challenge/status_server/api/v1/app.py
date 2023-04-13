@@ -7,7 +7,6 @@ from flask import Flask, jsonify, make_response
 
 app = Flask(__name__)
 app.secret_key = 'jesse2jenny'
-app.register_blueprint(app_views)
 
 
 @app.errorhandler(404)
